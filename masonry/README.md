@@ -1,4 +1,4 @@
-# Masonry Theme
+# masonry
 
 by [Chris Brown](https://github.com/chris-brown), forked from https://github.com/chris-brown/Masonry-Ghost-Theme
 
