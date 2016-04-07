@@ -1,0 +1,3 @@
+[submodule "FREE/1-prime-time/Casper"]
+	path = FREE/1-prime-time/Casper
+	url = git@github.com:TryGhost/Casper.git
