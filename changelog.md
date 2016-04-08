@@ -15,8 +15,8 @@
 ### 0.0
 - tk
 
-### 0.0
-- tk
+### 0.03 2016-04-08_09h15
+- restructure
 
 ### 0.02 - 2016-04-06_11h50
 - add Masonry-Ghost-Theme-master
