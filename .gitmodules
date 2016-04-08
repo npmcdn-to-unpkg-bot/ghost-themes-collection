@@ -1,9 +1,9 @@
-[submodule "FREE/1-prime-time/Casper"]
-	path = FREE/1-prime-time/Casper
-	url = git@github.com:TryGhost/Casper.git
 [submodule "Free_Themes/Casper"]
 	path = Free_Themes/Casper
 	url = https://github.com/TryGhost/Casper.git
-[submodule "Free_Themes/Masonry-Ghost-Theme"]
+[submodule "Free_Themes/Masonry"]
 	path = Free_Themes/Masonry-Ghost-Theme
 	url = https://github.com/chris-brown/Masonry-Ghost-Theme.git
+[submodule "Free_Themes/ghostwriter"]
+	path = Free_Themes/ghostwriter
+	url = https://github.com/roryg/ghostwriter.git
