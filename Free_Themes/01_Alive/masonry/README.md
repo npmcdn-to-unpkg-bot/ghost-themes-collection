@@ -1,7 +1,7 @@
 # from
 https://github.com/chris-brown/Masonry-Ghost-Theme
 
-# Masonry Theme
+# masonry Theme
 
 A basic masonry theme for [Ghost](https://ghost.org) by [Chris Brown](https://github.com/chris-brown)
 
