@@ -7,3 +7,6 @@
 [submodule "Free_Themes/ghostwriter"]
 	path = Free_Themes/ghostwriter
 	url = https://github.com/roryg/ghostwriter.git
+[submodule "Free_Themes/ghostium"]
+	path = Free_Themes/ghostium
+	url = https://github.com/oswaldoacauan/ghostium.git
