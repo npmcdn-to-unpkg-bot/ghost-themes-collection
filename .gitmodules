@@ -4,3 +4,6 @@
 [submodule "Free_Themes/Masonry"]
 	path = Free_Themes/Masonry-Ghost-Theme
 	url = https://github.com/chris-brown/Masonry-Ghost-Theme.git
+[submodule "Free_Themes/ghostwriter"]
+	path = Free_Themes/ghostwriter
+	url = https://github.com/roryg/ghostwriter.git
