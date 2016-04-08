@@ -7,8 +7,13 @@
 - tk
 
 ### 0.06
-- Major re-structured of the folders
 - Need to test 29 themes
+- Major re-structured of the folders
+- Tested and NoGo
+	- bleak
+	- Bootstrap
+	- cactus
+	- CodeBlue
 
 ### 0.05 2016-04-08_14h49
 - adding the first 29 themes
