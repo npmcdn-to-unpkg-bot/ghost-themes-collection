@@ -1,1 +1,0 @@
-# Rules about premium
