@@ -9,6 +9,7 @@
 ### 0.06
 - Need to test 29 themes
 - Major re-structured of the folders
+- Adding casper EVERYWHERE so the blog does not brakes because it does not find our default casper theme.
 - Tested and NoGo
 	- bleak
 	- Bootstrap
