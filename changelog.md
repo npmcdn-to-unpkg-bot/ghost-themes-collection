@@ -9,11 +9,11 @@
 ### 0.0
 - tk
 
-### 0.0
-- tk
+### 0.05 2016-04-08_14h49
+- adding the first 29 themes
 
-### 0.0
-- tk
+### 0.04 2016-04-08_11h49
+- After a massive F*&ck up with submodules, I finally just add themes manually.
 
 ### 0.03 2016-04-08_09h15
 - restructure

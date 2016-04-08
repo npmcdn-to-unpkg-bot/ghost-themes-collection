@@ -8,10 +8,11 @@ We made sure to make it easy for your to compare all those theme by putting some
 
 This is the possible review a theme can get:
 
-- 4/4 - Hell yeah!
+- 5/5 - Our Top 10 (because the paradox of choice is real)
+- 4/4 - Hell yeah _Ù/
 - 3/4 - Big Potential
 - 2/4 - Small Potential
-- 1/4 - No Way!
+- 1/4 - No Way! (Not part of the repo, but listed here)
 
 ## Why not forking the original repo?
 

@@ -1,0 +1,85 @@
+{{#post}}
+{{#is "post, page"}}
+<script tpye="text/javascript">
+    if ((window.location.href.match("#") == null) && (window.location.pathname != "/")) {
+        var loc = "/#" + window.location.pathname.substr(1);
+        window.location = loc;
+    }
+</script>
+{{/is}}
+
+<main class="main_pixel post" role="main">
+
+	<a id="back" href="#home"> <- Home</a>
+		
+		<div id="header_img"></div>
+
+		<article class="article_pixel" role="article" itemscope itemtype="http://schema.org/Article" style="display:table;">
+		
+			<header class="postheader_pixel">
+
+				<h1 class="posttitle_pixel" itemprop="headline">
+
+					{{title}}
+
+				</h1>
+
+				<time class="date_pixel" datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+
+					<span class="icon-clock"></span>{{date format='dddd DD MMM YYYY'}}
+
+				</time>
+				
+			</header>
+
+			<div class="postcontent_pixel" itemprop="articleBody">
+
+				{{content}}
+
+			</div>
+
+			{{#if tags}}
+			
+				<div class="posttags_pixel">
+
+					<p><span class="icon-tag"></span> {{tags separator=" | "}}</p>
+
+				</div>
+
+			{{/if}}
+
+			{{#if author.image}}
+
+			<div class="author-info">
+
+				<div class="author-block">
+
+					<img src="{{author.image}}" />
+					<p class="label">Author: </p>
+					<a href="http://{{author.website}}"><h2 class="author">{{author.name}}</h2></a>
+
+					<p class="author-bio">{{author.bio}}</p>
+
+				</div>
+
+			</div>
+
+			{{/if}}
+
+		</article>
+
+	{{#if pagination}}
+
+		<div class="pagination_pixel">
+
+			{{{pagination}}}
+
+		</div>
+
+	{{/if}}
+
+{{> footer}}
+
+</main>
+
+{{/post}}
