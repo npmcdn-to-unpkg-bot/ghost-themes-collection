@@ -1,6 +1,8 @@
 ## See it
 
-To see all these theme live, go to [themes.firepress.org](themes.firepress.org)
+To see all these themes live, go to [themes.firepress.org](themes.firepress.org).
+
+We made sure to make it easy for your to compare all those theme by putting some common content in them.
 
 ## The FireMeter
 
