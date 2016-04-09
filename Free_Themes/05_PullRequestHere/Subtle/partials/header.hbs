@@ -1,0 +1,8 @@
+<header class="site-header">
+	{{#if @blog.logo}}
+	<h1 class="site-title"><a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a></h1>
+	{{else}}
+	<h1 class="site-title"><a href="{{@blog.url}}" class="logo-text">{{@blog.title}}</a></h1>
+	{{/if}}
+	<a class="sidebar-toggle"><span class="screen-reader-text">Menu and Widgets</span><span class="icon" aria-hidden="true"></span></a>
+</header><!-- .site-header -->

@@ -1,0 +1,41 @@
+{{!< default}}
+
+{{> navigation}}
+
+<main id="container" role="main">
+	{{> sidebar}}
+		
+	<section class="posts">
+		{{#foreach posts}}
+		<article itemscope itemtype="http://schema.org/BlogPosting" class="{{post_class}} post-excerpt">
+			<header class="post-header">
+				<h2 itemprop="name">
+					<a href="{{url}}">{{{title}}}</a>
+				</h2>
+
+				<div class="post-meta">
+					<time itemprop="datePublished" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+					{{tags prefix="on "}}
+				</div>
+			</header>
+			
+			{{! This <div> used for featured image hack. Will be removed when Ghost 0.5 released :) }}
+			<div class="post-content-temp">
+				{{content}}
+			</div>
+
+			<section itemprop="description" class="post-content">
+				<p class="post-featured-image-container">
+					<img class="post-featured-image">
+				</p>
+				<p>{{excerpt}}&hellip;</p>
+				<div class="post-more-link-wrapper">
+					<a class="post-more-link" href="{{url}}">Read More</a>	
+				</div>
+			</section>
+		</article>
+		{{/foreach}}
+
+		{{pagination}}	
+	</section>
+</main>

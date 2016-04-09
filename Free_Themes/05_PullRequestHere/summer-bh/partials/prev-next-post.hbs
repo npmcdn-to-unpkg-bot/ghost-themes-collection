@@ -1,0 +1,43 @@
+{{!-- need to be included in context of a post --}}
+<div class="js-prev-next-post prev-next-post" data-equalizer>
+    {{#prev_post}}
+        <div class="prev-block {{^next_post}}full-width{{/next_post}}" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+            <a href="{{url}}" class="prev-next-block-link">
+                <section class="description">
+                    <span class="prev-next-label">Previous post</span>
+                    <span class="post-title">{{title}}</span>
+                    <span class="post-description">{{excerpt words="19"}}&hellip;</span>
+                </section>
+            </a>
+        </div>
+    {{else}}
+        <div class="prev-block" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+            <span class="prev-prev-block-link">
+                <section class="description">
+                    <span class="prev-next-label">Prev post</span>
+                    <span class="post-title">No more posts</span>
+                </section>
+            </span>
+        </div>
+    {{/prev_post}}
+    {{#next_post}}
+        <div class="next-block {{^prev_post}}full-width{{/prev_post}}" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+            <a href="{{url}}" class="prev-next-block-link">
+                <section class="description">
+                    <span class="prev-next-label">Next post</span>
+                    <span class="post-title">{{title}}</span>
+                    <span class="post-description">{{excerpt words="19"}}&hellip;</span>
+                </section>
+            </a>
+        </div>
+    {{else}}
+        <div class="next-block" style="background-image: url({{#if image}}{{image}}{{else}}{{@blog.cover}}{{/if}});" data-equalizer-watch>
+            <span class="prev-next-block-link">
+                <section class="description">
+                    <span class="prev-next-label">Next post</span>
+                    <span class="post-title">No more posts</span>
+                </section>
+            </span>
+        </div>
+    {{/next_post}}
+</div>

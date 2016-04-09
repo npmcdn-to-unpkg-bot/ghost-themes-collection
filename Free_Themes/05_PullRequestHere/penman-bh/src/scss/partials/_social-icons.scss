@@ -1,0 +1,47 @@
+/* Social icons
+---------------------------------------- */
+.icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 16px;
+    line-height: 34px;
+}
+
+.icon:hover {
+    color: #FFFFFF;
+}
+
+.icon-feed {    
+    background-color: #E66F30;
+}
+
+.icon-feed:hover {
+    background-color: #ED8751;
+}
+
+.icon-twitter {
+    background-color: #34A8FA;
+}
+
+.icon-twitter:hover {
+    background-color: #50B4FA;
+}
+
+.icon-google-plus {
+    background-color: #C2492F;
+}
+
+.icon-google-plus:hover {
+    background-color: #D46148;
+}
+
+.icon-facebook {
+    background-color: #38569C;
+}
+
+.icon-facebook:hover {
+    background-color: #5070BA;
+}

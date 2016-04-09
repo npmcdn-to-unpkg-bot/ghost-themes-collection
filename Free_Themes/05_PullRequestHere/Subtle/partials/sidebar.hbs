@@ -1,0 +1,21 @@
+<div class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="inner">
+			<div class="widget-area">
+				{{#if @blog.navigation}}
+					{{navigation}}
+				{{/if}}
+				<aside class="widget widget-about">
+					<h2 class="widget-title">About Me</h2>
+					<p><img src="{{asset "images/about.png"}}" alt="John Doe" class="about-photo" /></p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lacus id tortor iaculis iaculis dignissim eget justo. Maecenas posuere eros nisl, ut pharetra turpis faucibus a. In imperdiet urna mattis lacus mollis, sit amet pulvinar purus vehicula.</p>
+				</aside><!-- .widget -->
+				<aside class="widget widget-tags">
+					<h2 class="widget-title">Tags</h2>
+					<div class="tagcloud"></div>
+				</aside><!-- .widget -->
+			</div><!-- .widget-area -->
+			<a class="sidebar-toggle"><span class="screen-reader-text">Close</span><span class="icon" aria-hidden="true"></span></a>
+		</div><!-- .inner -->
+	</div><!-- .sidebar-scrollable -->
+</div><!-- .sidebar -->

@@ -1,0 +1,32 @@
+/* Pagination
+---------------------------------------- */
+.pagination {
+    color: #888888;
+    text-align: center;
+    font-size: 16px;
+
+    .older-posts, .newer-posts {
+        padding: 0 5px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color: #777777;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    }
+
+    .older-posts:hover, .newer-posts:hover {
+        background-color: #666666;
+        color: #FFFFFF;  
+    }
+
+    .older-posts {
+        float: right;
+    }
+
+    .newer-posts {
+        float: left;
+    }
+}

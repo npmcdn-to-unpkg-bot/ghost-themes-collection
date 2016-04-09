@@ -1,0 +1,24 @@
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
+}
+
+a:hover {
+  color:#069;
+}
+
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
+}
+
+a:hover small {
+  color:#777;
+}
+
+p:first-child {
+  margin-top: 0;
+}

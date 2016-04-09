@@ -1,0 +1,17 @@
+<div class="posts col-xs-12 single-col single-post">
+
+	{{#post}}
+		<article class="{{post_class}}">
+			<div class="post-content">
+				{{content}}
+
+				{{> post-sharing}}
+			</div>
+				
+			{{> adjacent-posts}}
+		</article>
+
+		{{> post-comments}}
+	{{/post}}
+
+</div>

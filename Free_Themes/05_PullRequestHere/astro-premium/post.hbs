@@ -1,0 +1,104 @@
+{{! USER CONFIGURATION OF THIS PAGE IS NOT REQUIRED }}
+{{!< default}}
+
+{{#post}}
+
+<div class="index">
+	<div class="wrapper">
+		<h1 class="right">{{title}}</h1>
+		<h2 class="left">Introduction</h2>
+	</div>
+</div>
+
+<div class="profile {{post_class}}">
+	<img src="{{author.image}}" class="profileimage" alt="user">
+	<h4>{{author.name}}</h4>
+	{{> social_side }}
+	<p>{{author.bio}}</p>
+	<hr>
+</div>
+
+<div id="cover" class="cover {{post_class}}">
+	<div class="background" {{#if image}} style="background-image: url({{image}})" {{/if}}></div>
+	<header class="wrapper">
+		<h2>
+			{{#foreach tags}}
+				<a href="{{url}}">{{name}}</a> 
+			{{/foreach}}
+		</h2>
+		<h1><a href="#">{{{title}}}</a></h1>
+		<span>
+			Posted by {{author}}
+				on <i class="fa fa-clock-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='MMMM Do, YYYY'}}</time>.
+		</span>
+	</header>
+	<i class="fa fa-chevron-down movedown"></i>
+</div>
+
+<section class="posts wrapper">
+	<article class="post {{post_class}}">
+		<header>
+			<div class="feature"><span>Featured</span><i class="fa fa-bookmark fa-lg"></i></div>
+			<h2>
+				{{#foreach tags}}
+					<a href="{{url}}">{{name}}</a> 
+				{{/foreach}}
+			</h2>
+			<h1 id="posttitle"><a href="#">{{{title}}}</a></h1>
+			<span>
+				Posted by {{author}}
+				on <i class="fa fa-clock-o"></i> <time datetime="{{date format="YYYY-MM-DD"}}">{{date format='MMMM Do, YYYY'}}</time>.
+			</span>
+			<a href="{{url}}#disqus_thread">Comments</a>
+		</header>
+		<section class="postbody">
+			{{content}}
+		</section>
+		<footer>
+			<ul class="share left">
+				<li><a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" class="smallbutton lightgray"><i class="fa fa-twitter"></i>Twitter</a></li>
+				<li><a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="smallbutton lightgray"><i class="fa fa-facebook"></i>Facebook</a></li>
+			</ul>
+			{{#if tags}}
+			<ul class="tags right">
+				{{#foreach tags}}
+				<a href="{{url}}" class="smallbutton solidgray">{{name}}</a>
+				{{/foreach}}
+			</ul>
+			{{/if}}
+		</footer>
+		<div class="postprofile">
+			<img src="{{author.image}}" class="author" alt="user">
+			<div class="info">
+				<h4>{{author.name}}</h4>
+				<a href="{{author.website}}">{{author.website}}</a>
+				<p>{{author.bio}}</p>
+				{{> social_bottom }}
+			</div>
+		</div>
+		<div class="comments">
+			<a href="javascript:;" class="readmore smallbutton blue"><i class="fa fa-comments"></i>View Comments...</a>
+
+
+ <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'takuu'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+		</div>
+
+	</article>
+
+</section>
+
+{{/post}}

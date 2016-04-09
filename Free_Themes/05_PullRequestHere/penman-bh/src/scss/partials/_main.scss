@@ -1,0 +1,22 @@
+/* Google Fonts
+---------------------------------------- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic|PT+Serif:400,700,400italic,700italic|Source+Code+Pro:200,300,400,500,600,700,900|Bree+Serif&subset=latin,latin-ext,cyrillic-ext,cyrillic);
+
+/* Main
+---------------------------------------- */
+BODY {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+}
+
+.clearfix {
+    clear: both;
+}

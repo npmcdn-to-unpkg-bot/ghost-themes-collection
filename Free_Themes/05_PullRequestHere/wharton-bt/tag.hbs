@@ -1,0 +1,98 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+
+{{! The main content area on the homepage }}
+<section class="main main-archive">
+
+
+
+<div class="content-hold">
+
+	<div class="wrapper">
+
+
+
+	<article class="post result">
+
+		<div class="inner">
+
+			<h1 class="searching"><a href="{{@blog.url}}/tag/{{tag.slug}}/rss/">{{tag.name}}</a></h1>
+
+		</div>
+
+	</article>
+
+
+    {{! Each post will be output using this markup }}
+    {{#foreach posts}}
+
+    <article class="{{post_class}}">
+
+    	<div class="post-image"><a href="{{url}}" title="{{{title}}}">{{content words="0"}}</a></div>
+
+    	<div class="inner post-inner">
+
+            <h2 class="post-title entry-title"><a href="{{url}}" title="{{{title}}}">{{{title}}}</a></h2>
+
+			<ul class="meta top">
+
+				<li class="time">
+
+					<a href="{{url}}" title="{{{title}}}"><time class="post-date updated" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM D, YYYY"}}</time></a>
+
+				</li>
+
+			</ul>
+            <p>{{excerpt}}&hellip;</p>
+			<!-- pascalupdates -->
+            <p><a href="{{url}}" title="{{{title}}}" class="more-link">Lire la suite ...</a></p>
+	         <span class="star"></span>
+
+        </div>
+
+    </article>
+
+    {{/foreach}}
+
+
+
+		</div>
+
+	</div>	{{! Wrapper and content hold close}}
+
+
+
+</section> {{! Section main archive close}}
+
+    {{!! After all the posts, we have the previous/next pagination links }}
+    {{pagination}}
+
+
+
+
+
+    <nav class="hidden sitenav-posts footer-posts">
+
+
+		<!-- custom pascal updates -->
+    	<h4 class="navigation-posts-text">Articles plus récents</h4>
+
+    	<ul>
+
+    		{{! Each post will be output using this markup }}
+
+    		{{#foreach posts}}
+
+    			<li><a href="{{url}}" title="{{{title}}}">{{{title}}}</a></li>
+
+    		{{/foreach}}
+
+    	</ul>
+
+    </nav>
+
+</section>
+

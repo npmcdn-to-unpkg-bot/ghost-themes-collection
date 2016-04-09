@@ -1,0 +1,21 @@
+{{!< default}}
+
+{{> navigation}}
+
+<main id="container" role="main">
+    {{> sidebar}}	
+
+    <section class="posts">
+        {{#post}}
+        <article class="{{post_class}} post-full">
+            <header class="post-header">
+                <h2>{{{title}}}</h2>         
+            </header>
+            
+            <section class="post-content">
+                {{content}}
+            </section>
+        </article>        
+        {{/post}}
+    </section>
+</main>

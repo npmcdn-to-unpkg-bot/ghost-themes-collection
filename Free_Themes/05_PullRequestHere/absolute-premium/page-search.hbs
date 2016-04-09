@@ -1,0 +1,32 @@
+{{!< default}}
+
+{{> nav}}
+
+<section class="content">
+    <div class="content-wrap">
+        {{#post}}
+        <article class="{{post_class}}">
+            <header><h1>{{{title}}}</h1></header>
+            <div class="post-content">{{content}}</div>
+        </article>
+        {{/post}}
+
+      <form class="navbar-form navbar-left" action="#" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" id="keyword" placeholder="Keyword....">
+        </div>
+      </form>
+
+      <section id="results"></section>
+
+    </div>
+
+</section>
+
+<script>
+$(document).ready(function(e) {
+   $("#keyword").focus();
+});
+</script>
+
+

@@ -1,0 +1,84 @@
+/* Sidebar
+---------------------------------------- */
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    border-right: 3px solid #DDDDDD;
+    background-color: $sidebar-background-color;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+
+    .blog-info {
+        margin-top: 10%;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 1px rgba(50, 50, 50, 0.3);
+        font-family: 'Source Sans Pro', sans-serif;
+
+        .blog-logo {
+            display: inline-block;
+            width: 110px;
+
+            .blog-logo-inner {
+                display: block;
+                width: 100px;
+                height: 100px;
+                border: 5px solid #fff;
+                -webkit-border-radius: 100%;
+                -moz-border-radius: 100%;
+                border-radius: 100%;
+                background-position: center center;
+                background-size: cover;
+                -webkit-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.15);
+                -moz-box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.15);
+                box-shadow: 0px 0px 9px rgba(50, 50, 50, 0.15);
+            }
+        }
+
+        .blog-title {
+            margin-top: 25px;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 48px;
+
+            A {
+                color: #FFFFFF;
+
+                &:hover {
+                    color: #FFFFFF;
+                }
+            }
+        }
+
+        .blog-description {
+            font-size: 20px;
+        }
+    }
+}
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 0;
+    padding: 7% 0 6% 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    .copyright {
+        margin-top: 5%;
+        color: #FFFFFF;
+        font-size: 12px;
+        font-family: Tahoma, sans-serif;
+        line-height: 1.7;
+
+        A {
+            color: #FFFFFF;
+            font-weight: bold;
+
+            &:hover {
+                color: #FFFFFF;
+                text-decoration: underline;
+            }
+        }
+    }
+}

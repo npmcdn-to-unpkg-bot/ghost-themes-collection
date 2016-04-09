@@ -1,0 +1,198 @@
+/* Posts
+---------------------------------------- */
+.posts {
+    margin-left: 25%;
+    padding: 3% 5%;
+    width: 50%;
+    color: #555555;
+    font-size: 18px;
+    font-family: $text-font-family;
+    line-height: 29px;
+}
+
+.post-excerpt {
+    margin-bottom: 33px;
+    padding-bottom: 40px;
+    border-bottom: 3px solid #eaeaea;
+}
+
+.post-content-temp {
+    display: none;
+} 
+
+.post-full {
+    border-bottom: 3px solid #eaeaea;
+}
+
+.post-header {
+    H2 {
+        margin: 0 0 2px 0;
+        color: #333333;
+        font-size: 34px;
+        line-height: 42px;
+
+        A {
+            color: #333333;
+            text-decoration: none;
+
+            &:hover {
+                color: #777777;
+            }
+        }
+    }
+}      
+
+.post-meta {
+    margin-left: 2px;
+    color: #777777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 11px;
+    font-family: Tahoma, sans-serif;
+}
+
+.post-content {
+    P {
+        margin: 20px 0;
+
+        & > .fluid-width-video-wrapper {
+            margin: 0;
+        }
+    }
+
+    .fluid-width-video-wrapper {
+        margin: 20px 0;
+    }
+
+    .post-featured-image-container {
+        IMG {
+            border-radius: 5px;
+        }
+    }
+}
+
+.post {
+    IMG {
+        display: block;
+        width: 100%;
+    }
+}
+
+.post-more-link-wrapper {
+    .post-more-link {
+        padding: 0 5px;
+        border: 2px solid #DDDDDD;
+        background-color: #F9F9F9;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color: #888888;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+
+        &:hover {      
+            border-color: #555555;
+            background-color: #555555;
+            color: #FFFFFF;
+        }
+    }
+}
+
+/* Author profile
+---------------------------------------- */
+.author-profile {
+    float: left;
+    overflow: hidden;
+    margin-top: 22px;
+    width: 50%;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: Tahoma, sans-serif;
+
+    .author-image {
+        float: left;
+        width: 90px;
+
+        .author-image-inner {
+            display: block;
+            width: 80px;
+            height: 80px;
+            border: 5px solid #ddd;
+            border-radius: 100%;
+            background-position: center center;
+            background-size: cover;
+        }
+    }
+
+    .author-bio {
+        float: left;
+        margin-top: 10px;
+        margin-left: 15px;
+        width: 70%;
+        text-transform: none;
+        letter-spacing: normal;
+        font-size: 14px;
+        font-family: 'Source Sans Pro', sans-serif;
+        line-height: 20px;
+
+        .author-name {
+            margin-bottom: 5px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .author-bio-text {
+            font-style: italic;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+}          
+
+/* Share buttons
+---------------------------------------- */
+.share-buttons {
+    float: right;
+    margin-top: 17px;
+    color: #777;
+    text-align: right;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-family: Tahoma, sans-serif;
+
+    .share-buttons-title {
+        margin-bottom: 5px;
+        color: #777;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-size: 12px;
+        font-family: Tahoma, sans-serif;
+    }
+
+    .icon-twitter,
+    .icon-facebook,
+    .icon-google-plus {
+        line-height: 32px;
+        letter-spacing: normal;
+    }
+}  
+
+/* Comments
+---------------------------------------- */
+.comments {
+    margin-top: 22px;
+    padding-top: 28px;
+    border-top: 3px solid #eaeaea;
+
+    #disqus_thread {
+        padding: 30px;
+        border: 1px solid #eaeaea;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+    }
+}

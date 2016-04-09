@@ -1,0 +1,29 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type='text/javascript' src='/assets/js/plugins/moment.min.js'></script>
+
+<script>
+// calls appery db and fetches 'home' location
+(function() {
+
+  var startDate = moment("June 15, 2014");
+  var today = moment();
+
+  $.ajax({
+    url: 'https://api.appery.io/rest/1/db/collections/home?limit=1&sort=-_createdAt',
+    type: 'GET',
+    headers: {"X-Appery-Database-Id": "537492bfe4b0d2288dcd4e87"},
+    success: function(data, textStatus) {
+      $('#home-location').html(data[0].name);
+      $('#home-days-on-road').html(today.diff(startDate, 'days'));
+    },
+    error: function(textStatus, errorThrown) {
+      $('#home-location').html('Ugh! Location Error!');
+      console.log(textStatus);
+    }
+  });
+})()
+</script>
+
+<!-- Home Hero Text here -->
+<h2>{{@blog.title}}</h2>
+<div class="home-content" style="font-size:24pt"><span id="home-days-on-road">?</span> days on the road. Currently in <span id="home-location">Loading...</span>.<br/><a href="/map">See a map of where we've been.</a></div>
