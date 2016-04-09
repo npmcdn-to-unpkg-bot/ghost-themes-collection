@@ -1,0 +1,38 @@
+<div class="sidebar">
+	<div class="sidebar-scrollable">
+		<div class="widget-area">
+			{{#if @blog.navigation}}
+				{{navigation}}
+			{{/if}}
+			<aside class="widget widget-text">
+				<h2 class="widget-title">About {{@blog.title}}</h2>
+				<p>Client Experience in Professional Services (CXps) is a place engineers, lawyers, architects, IT professionals, and more can begin developing the next generation of best practices in client management. Together, we will improve our clients’ experience, drive fierce loyalty, and increased personal satisfaction knowing we’re truly doing our best.</p>
+			</aside><!-- .widget -->
+			<aside class="widget widget-newsletter">
+				<h2 class="widget-title">{{@blog.title}} Newsletter</h2>
+				<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+				<!-- Begin MailChimp Signup Form -->
+				<div id="mc_embed_signup">
+					<form action="{{! Add your form action URL }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+						<div id="mc_embed_signup_scroll">
+							<label for="mce-EMAIL" class="screen-reader-text">Email Address</label>
+							<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+							<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+						</div>
+					</form>
+				</div>
+				<!--End mc_embed_signup-->
+			</aside><!-- .widget -->
+			<aside class="widget widget-text">
+				<h2 class="widget-title">Contact</h2>
+				<p>Get in touch with use if you're interested in learning more or becoming an active participant.</p>
+				<ul class="contacts">
+					<li><span class="icon icon-envelope" aria-hidden="true"></span> info@clientexperience.org</li>
+					<li><span class="icon icon-map-marker" aria-hidden="true"></span> 6601 Six Forks Rd Suite 301, Raleigh, NC 27615</li>
+					<li><span class="icon icon-phone" aria-hidden="true"></span> 866-433-7322</li>
+				</ul>
+			</aside><!-- .widget -->
+		</div><!-- .widget-area -->
+		<a class="sidebar-toggle"><span class="screen-reader-text">Close Sidebar</span><span class="icon" aria-hidden="true"></span></a>
+	</div><!-- .sidebar-scrollable -->
+</div><!-- .sidebar -->

@@ -1,0 +1,115 @@
+@media screen and (max-width: 960px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        border-right: 0;
+        border-bottom: 3px solid #ddd;
+    }
+    
+    .posts {
+        margin: 0;
+        margin-top: 10px;
+        padding: 0;
+        padding-bottom: 0;
+        width: 100%;
+    }
+    
+    .post {
+        padding: 10px 20px 0 20px;
+    }
+
+    .header {
+        text-align: center;
+    }
+    
+    .sidebar {
+        .blog-info {
+            margin-top: 0;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
+    }
+
+    .sidebar-footer {
+        display: none;
+    }
+    
+    .post-more-link-wrapper {
+        .post-more-link {
+            display: block;
+            margin-bottom: 37px;
+            padding: 10px 0;
+            text-align: center;
+        }
+    }
+    
+    .author-profile {
+        float: none;
+        padding: 0 5%;
+        width: 90%;
+        text-align: center;
+
+        .author-image {
+            float: none;
+            width: 100%;
+
+            .author-image-inner {
+                display: inline-block;
+            }
+        }
+
+        .author-bio {
+            float: none;
+            margin: 0;
+            width: 100%;
+        }
+    }   
+    
+    .share-buttons {
+        float: none;
+        margin-top: 20px;
+        padding: 0 5%;
+        width: 90%;
+        text-align: center;
+    }
+    
+    .comments {
+        padding-top: 0;        
+        border: 0;
+
+        #disqus_thread {
+            padding: 5%;
+            border-radius: 0;
+        } 
+    }       
+    
+    .pagination {
+        height: 49px;
+
+        .older-posts, .newer-posts {
+            padding: 0 5px;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            color: #999999;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .older-posts:hover, .newer-posts:hover {
+            background-color: #555555;
+            color: #ffffff;  
+        }
+
+        .older-posts {
+            float: right;
+            margin-right: 20px;
+        }
+
+        .newer-posts {
+            float: left;
+            margin-left: 20px;
+        }
+    }
+}

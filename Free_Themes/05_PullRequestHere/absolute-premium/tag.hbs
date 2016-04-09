@@ -1,0 +1,39 @@
+{{!< default}}
+
+{{> nav}}
+
+
+<section class="content">
+    <div class="content-wrap">
+    
+        <h3 class="page-title"><span class="fa fa-tag"></span> <span class="page-tag">{{tag.name}}</span></h3>
+
+        {{! Each post will be output using this markup }}
+        {{#foreach posts}}
+            <article class="{{post_class}}">
+                <div class="post-cover" data-url="{{@blog.url}}{{url}}">
+                    {{content words="0"}}
+                </div>
+                <header><h1><a href="{{url}}">{{{title}}}</a></h1></header>
+                <div class="post-meta">
+                    <span class="fa fa-calendar"></span> 
+                    <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time>
+                    {{#if tags}}
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span class="fa fa-tag"></span> <span class="tags">{{tags separator=", "}}</span>
+                    {{/if}}
+                    <span class="featured-meta" title="Featured Post"><span class="fa fa-star"></span></span>
+                </div>
+                <div class="post-excerpt">{{excerpt}}&hellip;</div>
+                <div class="post-more">
+                    <a href="{{url}}">Continue Reading <span class="fa fa-long-arrow-right"></span></a>
+                </div>
+                {{#unless @last}}
+                <hr />
+                {{/unless}}
+            </article>
+        {{/foreach}}
+    </div>
+
+    {{pagination}}
+
+</section>

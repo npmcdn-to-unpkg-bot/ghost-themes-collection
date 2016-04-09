@@ -1,0 +1,29 @@
+<aside class="sidebar" role="banner" {{#if @blog.cover}}style="background-image: url({{@blog.cover}});"{{/if}}>
+	<div class="nav-toggler-container">
+		<button class="nav-toggler">
+			<i class="fa fa-bars"></i>
+		</button>
+	</div>
+
+	<section class="blog-info">
+		<div class="blog-logo">
+			<div class="blog-logo-inner" style="background-image: url({{@blog.logo}});"></div> 
+		</div>
+
+		<div class="blog-title">
+			<a href="{{@blog.url}}">{{@blog.title}}</a>
+		</div>
+
+		<div class="blog-description">{{@blog.description}}</div>
+	</section>
+	
+	<footer class="sidebar-footer" role="content-info">
+		{{> social-links}}	
+		
+		<section class="copyright">
+			All content copyright <a href="/">{{@blog.title}}</a> &copy; 2014 &bull; All rights reserved.
+			<br>
+			Proudly published with <a href="http://ghost.org">Ghost</a>. Theme crafted by <a href="http://infinitum.me/">Infinitum Themes</a>.
+		</section>		
+	</footer>
+</aside>

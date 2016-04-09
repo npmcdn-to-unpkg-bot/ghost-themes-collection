@@ -1,0 +1,56 @@
+/* Typography
+---------------------------------------- */
+PRE {  
+    font-weight: 500;    
+    font-size: 14px;
+    font-family: $code-font-family;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow: auto;    
+
+    CODE {
+        padding: 16px 20px;
+    }         
+}
+
+CODE {
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: $code-font-family;
+}
+
+A {
+    display: inline-block;
+    color: $link-color;
+    text-decoration: none;
+}
+
+A:hover {
+    color: #00ABFF;
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+H1, H2, H3, H4, H5, H6 {
+    text-transform: uppercase;
+    font-family: 'Bree Serif', sans-serif;
+}
+
+BLOCKQUOTE {
+    display: block;
+    margin: 0;
+    padding: 5px 10px 5px 15px;
+    border-left: 7px solid #F0F0F0;
+    border-radius: 5px;
+    background: #F8F8F8;
+    font-style: italic;
+}
+
+HR {
+    width: 30%;
+    border: 2px solid #eaeaea;
+}

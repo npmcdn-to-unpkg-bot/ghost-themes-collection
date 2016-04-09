@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Penman Documentation</title>
+
+    <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:300,600" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic" rel="stylesheet" type="text/css"/>
+    <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="gist-io-screen.css"/>
+    <style type="text/css">
+        #gistbody h1:first-child { 
+            font-family: 'Oswald', sans-serif; 
+            font-size: 2.4em; 
+            display: block !important;
+            margin-top: 1em !important;
+        }
+        h3 { text-transform: uppercase; font-size: 0.99em; }
+        body { font-family: 'Merriweather', Georgia, serif; }
+        .content { font-size: 1em; }
+        ul, ol { list-style-position: inside !important; }
+    </style>
+</head>
+<body>
+    <section class="content">
+        <article id="gistbody" class="instapaper_body entry-content">
+            <h1>
+<a name="penman-documentation" class="anchor" href="#penman-documentation"><span class="octicon octicon-link"></span></a>Penman Documentation</h1>
+
+<p>Thank you for purchasing theme. If you have any questions that are beyond the scope of documentation page, please feel free to ask us via <a href="mailto:support@infinitum.me">e-mail</a> or comment section on ThemeForest.</p>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<ol>
+<li>Extract content of ZIP archive into <strong>themes</strong> directory: <code>/content/themes</code>.</li>
+<li>Restart <strong>Ghost</strong> instance.</li>
+<li>Sign in to <strong>Ghost Admin</strong>, then go to <strong>Settings → General</strong> and select <strong>Penman - 0.3.0</strong> in themes list.</li>
+</ol><h2>
+<a name="configuration" class="anchor" href="#configuration"><span class="octicon octicon-link"></span></a>Configuration</h2>
+
+<h3>
+<a name="twitter-cards" class="anchor" href="#twitter-cards"><span class="octicon octicon-link"></span></a>Twitter Cards</h3>
+
+<p>Set up your Twitter profile in <code>partials/twitter-cards.hbs</code>:</p>
+
+<pre><code>{{! Set up your Twitter profile }}
+&lt;meta name=&#34;twitter:site&#34; content=&#34;@username&#34;&gt;
+&lt;meta name=&#34;twitter:creator&#34; content=&#34;@username&#34;&gt;</code></pre>
+
+<h3>
+<a name="social-links" class="anchor" href="#social-links"><span class="octicon octicon-link"></span></a>Social links</h3>
+
+<p>You can set up links to your social profiles in <code>partials/social-links.hbs</code>:</p>
+
+<pre><code>&lt;section class=&#34;social-links&#34;&gt;
+    {{! RSS Feed }}
+    &lt;a class=&#34;icon icon-feed&#34; href=&#34;{{@blog.url}}/rss/&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;fa fa-rss&#34;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+
+    {{! Twitter }}
+    &lt;a class=&#34;icon icon-twitter&#34; href=&#34;http://twitter.com/&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;fa fa-twitter&#34;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+
+    {{! Facebook }}
+    &lt;a class=&#34;icon icon-facebook&#34; href=&#34;http://facebook.com/&#34; target=&#34;_blank&#34;&gt;
+           &lt;i class=&#34;fa fa-facebook&#34;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+
+    {{! Google Plus }}
+    &lt;a class=&#34;icon icon-google-plus&#34; href=&#34;http://plus.google.com/&#34; target=&#34;_blank&#34;&gt;
+        &lt;i class=&#34;fa fa-google-plus&#34;&gt;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/section&gt;</code></pre>
+
+<p>You can add another social icons if you want because Penman uses Font Awesome Icons. You can check out all social icons <a href="http://fontawesome.io/icons/#brand" title="Font Awesome Icons">here</a>.</p>
+
+<p>If you want to add a new icon, you need to change <code>social-links.hbs</code> in <code>partials</code> folder. Just add new link block:</p>
+
+<pre><code>&lt;a class=&#34;icon icon-name&#34; href=&#34;http://example.com/&#34; target=&#34;_blank&#34;&gt;
+    &lt;i class=&#34;fa fa-name&#34;&gt;&lt;/i&gt;
+&lt;/a&gt;</code></pre>
+
+<p>Now replace <code>fa-name</code> here <code>&lt;i class=&#34;fa fa-name fa-lg&#34;&gt;</code> with icon code (<code>fa-instagram</code>, <code>fa-linkedin</code>, etc) from page that mentioned before.</p>
+
+<h3>
+<a name="disqus-comments" class="anchor" href="#disqus-comments"><span class="octicon octicon-link"></span></a>Disqus comments</h3>
+
+<p>If you would like to use Disqus comments just change your shortname in <code>partials/config.hbs</code>:</p>
+
+<pre><code>{{! Disqus shortname }}
+var disqus_shortname = 'example';</code></pre>
+
+<h3>
+<a name="google-analytics" class="anchor" href="#google-analytics"><span class="octicon octicon-link"></span></a>Google Analytics</h3>
+
+<p>If you would like to use Google Analytics just change your Google Analytics ID in <code>partials/config.hbs</code>:</p>
+
+<pre><code>{{! Google Analytics ID }}
+var ga_id = 'UA-XXXXX-X';</code></pre>
+
+<h3>
+<a name="static-pages-menu" class="anchor" href="#static-pages-menu"><span class="octicon octicon-link"></span></a>Static pages menu</h3>
+
+<p>Ghost Aton (0.4) bring to us static pages feature. So if you want to add links of static pages in menu, you need to modify <code>partials/navigation.hbs</code>.</p>
+
+<h3>
+<a name="featured-image" class="anchor" href="#featured-image"><span class="octicon octicon-link"></span></a>Featured image</h3>
+
+<p>You can set featured image by specifying alt property of image:</p>
+
+<pre><code>![featured-image](/content/images/2014/Jan/pic2.jpg)</code></pre>
+        </article>
+    </section>
+</body>
+</html>

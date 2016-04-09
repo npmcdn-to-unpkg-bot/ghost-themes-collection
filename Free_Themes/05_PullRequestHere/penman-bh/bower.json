@@ -1,0 +1,41 @@
+{
+	"name": "Penman",
+	"version": "0.2.0",
+	"dependencies": {
+		"normalize-css": "latest",
+		"font-awesome": "latest",
+		"fitvids": "latest",
+		"nprogress": "latest"
+	},
+	"install": {
+	    "path": {
+	    	"css": "src/scss/vendor/bower",
+	      	"js": "src/js/vendor/bower",
+	      	"eot": "assets/fonts",
+	        "svg": "assets/fonts",
+	        "ttf": "assets/fonts",
+	        "woff": "assets/fonts",
+	        "otf": "assets/fonts"
+	    },
+	    "sources": {
+	    	"fitvids": "src/bower_components/fitvids/jquery.fitvids.js",
+	      	"normalize-css": {
+	      		"mapping": [
+	      			{ "src/bower_components/normalize-css/normalize.css": "_normalize.scss" }
+	      		]
+	      	},   	
+	      	"font-awesome": {
+	      		"mapping": [
+	      			{ "src/bower_components/font-awesome/css/font-awesome.css": "_font-awesome.scss" },
+	      			{ "src/bower_components/font-awesome/fonts/fontawesome-webfont.eot": "fontawesome-webfont.eot" },
+	      			{ "src/bower_components/font-awesome/fonts/fontawesome-webfont.svg": "fontawesome-webfont.svg" },
+	      			{ "src/bower_components/font-awesome/fonts/fontawesome-webfont.ttf": "fontawesome-webfont.ttf" },
+	      			{ "src/bower_components/font-awesome/fonts/fontawesome-webfont.woff": "fontawesome-webfont.woff" },
+	      			{ "src/bower_components/font-awesome/fonts/FontAwesome.otf": "FontAwesome.otf" }
+	      		]
+	      	},
+	      	"nprogress": "src/bower_components/nprogress/nprogress.js"
+	    },
+	    "ignore": ["jquery"]
+  	}
+}

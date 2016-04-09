@@ -1,0 +1,58 @@
+{{!< default}}
+{{> intro}}
+<main class="body-content" role="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div id="filter">
+                    <button type="button" class="btn btn-theme active visible-xs filter-mobile" data-toggle="collapse" data-target="#tags">
+                        <i class="fa fa-reorder"></i> Filter By Tags
+                    </button>
+                    <ul id="tags" class="collapse navbar-collapse">
+                        <li>
+                            <a href="#" data-filter="*" class="btn btn-theme filter-item active">
+                                <i class="fa fa-reorder"></i> All Posts
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+            <div id="isotope-content">
+                {{#foreach posts}}
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 {{post_class}}" {{#if tags}}data-tags="{{#foreach tags}}{{name}},{{/foreach}}"{{/if}}>
+                    <div class="wrap{{#if image}} formated{{/if}}">
+                        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+                        <div class="post-excerpt">
+                            {{#if image}}
+                            <div class="post-photo">
+                                <img src="{{image}}" alt="thumb image-post mask" class="img-responsive">
+                                <div class="mask">
+                                    <a class="preview" href="{{image}}" rel="prettyPhoto"><i class="fa fa-search"></i></a>
+                                    <a class="detail" href="{{url}}"><i class="fa fa-link"></i></a>
+                                </div>
+                            </div>
+                            {{else}}
+                            <div class="hidden-cover">{{content words="0"}}</div>
+                            {{/if}}
+                            {{excerpt words="40"}} ... <a class="read-more" href="{{url}}">Read more »</a>
+                        </div>
+                        {{>home-meta-post}}
+                    </div>
+                </div>
+                {{/foreach}}
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+              <div class="widget-wrap" style="margin-top: 20px !important">
+                  {{> sidebars-index }}
+              </div>
+          </div>
+        </div>
+        {{#if pagination}}
+          {{pagination}}
+        {{/if}}
+    </div>
+</main>
