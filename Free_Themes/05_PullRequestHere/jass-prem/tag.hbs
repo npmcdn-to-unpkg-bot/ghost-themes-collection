@@ -1,0 +1,12 @@
+{{!< default}}
+{{#if tag.image}}<div class="wrapper"><div class="cover"><img src="{{tag.image}}" alt=""></div></div>{{/if}}
+<div class="content">
+	<div class="wrapper">
+		<div class="posts">				
+			<div class="tagTitle_tagTotal">
+				<h2 class="tagTitle">{{pagination.total}} Post Tagged as <span class="tag_name">{{tag.name}}</span></h2>		
+			</div>			
+			{{> loop }}
+		</div>{{> desktop/sidebar}}
+	</div>
+</div>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+	<title>{{meta_title}}</title>
+	<meta name="description," content="{{meta_description}}">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+
+	{{! favicon}}
+	<link rel="shortcut icon" href="{{ asset 'favicon.png' }}">
+
+	{{! Styles }}
+	<link rel="stylesheet" href="{{ asset "css/all.min.css" }}">
+	<link rel="stylesheet" href="{{ asset "css/obsidian.min.css" }}">
+	<link rel="stylesheet" media="(max-width: 699px)" href="{{ asset "css/jass_mob.min.css" }}" />
+	<link rel="stylesheet" media="(min-width: 700px)" href="{{ asset "css/jass_des.min.css" }}" />
+
+	<meta name="twitter:widgets:theme" content="light">
+	<meta name="twitter:widgets:link-color" content="#2E8CDA">
+	<meta name="twitter:widgets:border-color" content="#E8E8E8">
+	{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+	{{> "header"}}
+
+	{{{body}}}
+
+	{{> "footer"}}
+
+	{{ghost_foot}}
+	<script src="{{ asset 'js/all.min.js' }}"></script>
+
+	{{> disqus_count}}
+</body>
+</html>

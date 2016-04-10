@@ -1,0 +1,68 @@
+{{!< default}}
+
+{{#post}}
+<main class="content" role="main">
+    <div class="wrapper">
+        <div class="post">
+            <article id="{{id}}" class="{{post_class}}">
+                {{#if image}}
+                    <figure class="cover_post">
+                        <img src="{{image}}" alt="{{{title}}}">
+                    </figure>
+                {{/if}}
+                <div class="avatar_title">
+                    <h1 class="title">
+                        <a href="{{url}}">{{{title}}}</a>
+                    </h1>
+                </div>
+                <section>
+                  {{content}}
+                </section>
+                <div class="share_tags">
+                    <div class="share">
+                        <h5>Share this post</h5>
+                        <div class="icons">
+                            <a class="twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+                            <a class="google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}" target="_blank">
+                                <i class="fa fa-google-plus"></i>
+                            </a>
+                        </div>
+                    </div>{{#if tags}}<div class="tags">
+                        <h5>Tags</h5>
+                        {{tags separator=""}}
+                    </div>{{/if}}
+                </div>
+                {{#author}}<div class="author">{{#if image}}<figure class="avatar">
+                        <img src="{{image}}" alt="{{name}}">
+                    </figure>{{/if}}<div class="info">
+                        <h3 class="name"><a href="{{url}}">{{name}}</a></h3>
+                        <p class="more">Ver <a href="{{url}}">articles</a></p>
+                        {{#if website}}
+                            <p class="website">
+                                <a href="{{website}}">{{website}}</a>
+                            </p>
+                        {{/if}}
+                    </div>
+                </div>{{/author}}
+            </article>
+            <div class="postx">
+              {{#prev_post}}
+                <a href="{{url}}">{{title}}</a>
+              {{/prev_post}}
+
+              {{#next_post}}
+                <a href="{{url}}">{{title}}</a>
+              {{/next_post}}
+            </div>
+
+            {{> disqus }}
+
+        </div>{{> sidebar}}
+    </div>
+</main>
+{{/post}}
