@@ -1,0 +1,50 @@
+{{!< default}}
+{{> header}}
+
+<section class="page-content primary" role="main">
+
+  {{#post}}
+
+    <article id="post-{{id}}" class="post {{post_class}}" role="article" itemscope
+        itemtype="http://schema.org/Article">
+
+      <div class="post-thumbnail">
+        {{content words = "0"}}
+      </div>
+
+      <div class="content-wrapper">
+        <h2 class="post-title">
+          {{title}}
+        </h2>
+
+        <div class="post-meta">
+          Posted
+					<span datetime="{{date format="YYYY-MM-DD"}}" itemprop="datePublished">
+						{{date format='dddd'}}, {{date format='DD MMM YYYY'}}
+					</span>
+          {{!-- {{#if tags}}
+            <div class="post-tags">
+              Tags:
+              {{tags seperator=", "}}
+            </div>
+          {{/if}} --}}
+        </div>
+
+        <div class="post-content" itemprop="articleBody">
+
+          {{content}}
+
+        </div>
+
+        <aside class="post-aside">
+        </aside>
+
+      </div>
+
+    </article>
+
+  {{/post}}
+
+  {{> footer}}
+
+</section>
