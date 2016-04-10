@@ -1,0 +1,45 @@
+{{!< default}}
+
+{{#foreach posts}}
+
+    <div class="large-12 medium-12 small-12 columns no-side-pad {{post_class}} mt mb">
+        <div class="columns no-side-pad pw-ph">
+            <div class="pw-post-image ppi-{{id}}" data-href="{{url}}">
+                {{content words="0"}}
+            </div>
+            <div class="pw-post-header black-d-bg">
+                <div class="pw-post-date">
+                    <span class="pw-day">{{date format="DD"}} /</span>
+                    <span class="pw-month thin">{{date format="MMMM"}} /</span>
+                    <span class="pw-year thin">{{date format="YYYY"}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="columns no-side-pad post-excerpt">
+            <h2 class="dblock thin p-title-link"><a href="{{url}}">{{{title}}}</a></h2>
+            <div class="dblock thin pw-post-excerpt">
+                {{content words="50"}}
+            </div>
+        </div>
+        <div class="columns no-side-pad pw-post-options mt">
+            <div class="large-6 medium-6 small-6 columns no-side-pad">
+                <a href="{{url}}" class="button tiny outline-bl mbz" style="6px">READ</a>
+            </div>
+            <div class="large-6 medium-6 small-6 columns small-only-left-pad small-only-right-pad text-align-right-not-small">
+                <span class="dblock pw-share">
+                    <a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" 
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" class="sicon-tw" rel="external"></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" 
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="sicon-f" rel="external"></a>
+                    <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" class="sicon-g" rel="external"></a>
+                </span>
+            </div>
+        </div>
+    
+    </div>
+
+{{/foreach}}
+
+{{!! After all the posts, we have the previous/next pagination links }}
+{{pagination}}

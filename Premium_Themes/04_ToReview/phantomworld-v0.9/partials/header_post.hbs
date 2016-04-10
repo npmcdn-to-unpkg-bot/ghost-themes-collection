@@ -1,0 +1,22 @@
+<header class="adjust pw-main-header pw-post-header-img" {{#if @blog.cover}} data-blog-cover="{{@blog.cover}}" {{/if}}>
+    <div class="adjust o">
+        <div class="large-12 medium-12 small-12 columns adjust pw-side-info">
+            {{#if @blog.title}}
+                <div class="pw-blog-title with-logo">{{@blog.title}}</div>
+            {{/if}}
+            <div class="adjust pw-blog-description">{{post.title}}</div>
+            <div class="adjust pw-post-meta hidden">
+                {{#post}}
+                    <span class="dblock">{{date format="DD / MMMM / YYYY"}}</span>
+                    <span class="dblock p-tag-links">{{tags prefix="tagged with: " separator=", "}}</span>
+                {{/post}}
+            </div>
+        </div>
+    </div>
+    <div class="adjust pw-subscribe">
+        <a href="{{@blog.url}}/rss/" class="sicon-rss"></a>
+    </div>
+    <div class="adjust pw-menu">
+        {{>menu}}
+    </div>
+</header>

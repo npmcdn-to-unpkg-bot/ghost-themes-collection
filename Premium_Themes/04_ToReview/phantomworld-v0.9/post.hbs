@@ -1,0 +1,76 @@
+{{!< default}}
+
+{{#post}}
+
+    <div class="large-12 medium-12 small-12 columns no-side-pad {{post_class}} mt">
+        
+        <div class="large-12 medium-12 small-12 columns no-side-pad">
+            <div class="dblock">
+                <h1 class="dblock thin p-title-link">{{{title}}}</h1>
+            </div>
+        </div>
+            
+        <div class="large-12 medium-12 small-12 columns no-side-pad" style="margin-top: -1.6rem">
+            <section class="post-content">
+                {{content}}
+            </section>
+        </div>
+    
+        <div class="pw-post-image ppi-{{id}} hidden">{{content words="0"}}</div>
+        
+    </div>
+    <div class="large-12 medium-12 small-12 columns no-side-pad pw-post-options">
+        <div class="large-6 medium-6 small-6 columns no-side-pad">
+            <a class="button tiny outline-bl mbz pw-button-back" style="6px">BACK</a>
+        </div>
+        <div class="large-6 medium-6 small-6 columns no-side-pad text-align-right-not-small">
+            <span class="dblock pw-share">
+                <a href="http://twitter.com/share?text={{encode title}}&url={{url absolute="true"}}" 
+                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;" class="sicon-tw" rel="external"></a>
+                <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" 
+                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;" class="sicon-f" rel="external"></a>
+                <a href="https://plus.google.com/share?url={{url absolute="true"}}"
+                    onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;" class="sicon-g" rel="external"></a>
+            </span>
+        </div>
+    </div>
+    <div class="large-12 medium-12 small-12 columns no-sp post-footer mtx2 mbx2">
+        <section class="author" {{#if author.image}} style="margin-left: 90px;" {{/if}}>
+            {{#if author.image}}
+                <div class="uimg" style="background-image: url({{author.image}})"></div>
+            {{/if}}
+            <h4>{{author.name}}</h4>
+            <p>{{author.bio}}</p>
+        </section>
+    </div>
+    
+    <section class="large-12 medium-12 small-12 columns pw-no-sp disqus-comments">
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            if (disqusShortName) {
+                var loadDisqus = true;
+                if (typeof DISQUS != 'undefined') {
+                    DISQUS.reset({reload: true, config: function () {
+                            this.page.identifier = '{{id}}';
+                            this.page.url = location.protocol + '//' + window.location.host + '{{url}}#!/{{id}}';
+                        }
+                    });
+                    loadDisqus = false;
+                }
+
+                var disqus_shortname = disqusShortName;
+                var disqus_identifier = '{{id}}';
+                var disqus_url = location.protocol + '//' + window.location.host + '{{url}}#!/{{id}}';
+                
+                if (loadDisqus) {
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                }
+            }
+        </script>
+    </section>
+
+{{/post}}

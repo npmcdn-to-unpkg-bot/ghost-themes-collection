@@ -1,0 +1,13 @@
+{{!< default}}
+
+{{#post}}
+    <div class="large-12 medium-12 small-12 columns no-side-pad {{post_class}} mt">
+        <section class="post-content">
+            {{content}}
+        </section>
+        <div class="pw-post-image ppi-{{id}} hidden">{{content words="0"}}</div>
+        <input type="hidden" id="pw-is-static" value="true" />
+    </div>
+{{/post}}
+
+
