@@ -1,0 +1,32 @@
+{{#foreach posts}}
+<article class="{{post_class}}">
+	{{#if image}}
+		<figure class="cover_post">
+			<img src="{{image}}" alt="{{{title}}}">
+		</figure>
+	{{/if}}
+	<div class="avatar_title" id="aritcle-{{id}}">
+		{{#if featured}} <i class="fa fa-star"></i> {{/if}}<h1 class="title">
+			<a href="{{url}}">{{{title}}}</a>
+		</h1>
+
+	</div>
+	<section>
+			<p>{{content words="200"}}</p>
+	</section>
+	<div class="author_read">
+		<div class="author">
+			{{#author}}
+				{{#if image}}<a href="{{url}}"><img src='{{image}}' alt='{{name}}' class="avatar"></a>{{/if}}
+				<a class="name" href="{{url}}">{{name}}</a>
+			{{/author}}
+			<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}"><i class="fa fa-clock-o"></i> {{date format="D MMM, YYYY"}}</time>
+			<a class="disqus_comment" href="{{url}}#disqus_thread"></a>
+		</div>
+		<p class="read_more">
+			<a href="{{url}}">read more</a>
+		</p>
+	</div>
+</article>
+{{/foreach}}
+{{pagination}}

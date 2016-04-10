@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {{! Document Settings }}
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        {{! Page Meta }}
+        <title>{{meta_title}}</title>
+        <meta name="description" content="{{meta_description}}" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
+
+        {{! CSS  }}
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{asset "css/screen.css"}}">
+        <link rel="stylesheet" href="{{asset "css/custom.css"}}">
+        
+        {{! Ghost outputs important style and meta data with this tag }}
+        {{ghost_head}}
+
+    </head>
+    <body class="{{body_class}}">
+        
+        <header class="site-header">
+            {{> header}}                  
+        </header>
+
+        <nav class="pushy pushy-left">
+            {{> navigation}}
+        </nav>
+
+        <div class="site-overlay"></div>
+
+        <main class="animated fadeIn" id="main" role="main">
+            {{{body}}}
+        </main>
+
+        <footer class="site-footer">
+            {{> footer}}
+        </footer>
+
+        {{! Ghost outputs important scripts and data with this tag }}
+        {{ghost_foot}}
+        <script src="{{asset "js/theme-options.js"}}"></script>
+        <script src="{{asset "js/main.min.js"}}"></script>
+    </body>
+</html>

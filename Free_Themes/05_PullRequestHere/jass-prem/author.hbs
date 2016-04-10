@@ -1,0 +1,24 @@
+{{!< default}}
+
+<div class="content" id>
+    <div class="wrapper">
+        <div class="posts">
+        {{#author}}
+        <div id="author">
+                {{#if image}}
+                <figure class="avatar">
+                    <img src="{{image}}">
+                </figure>
+                {{/if}}
+                <div class="info">
+                    <p class="stats"><i class="icon-stats"></i> {{plural ../pagination.total empty='0 Articles' singular='% Article' plural='% Articles'}}</p>
+                    <h2 class="name">{{name}}</h2>
+                    <p class="web_site"><a href="{{website}}">{{website}}</a></p>
+                    {{#if location}} <p class="from">Living in {{location}}</p> {{/if}}
+                </div>
+                <p class="bio">{{bio}} | <a class="subscribe-button icon-feed" href="{{url}}rss/">rss</a></p>
+        </div>
+        {{/author}}
+        {{> "loop"}}</div>{{> desktop/sidebar }}
+        </div>
+</div>
