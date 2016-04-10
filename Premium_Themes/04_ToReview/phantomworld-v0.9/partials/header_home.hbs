@@ -1,0 +1,18 @@
+<header {{#if @blog.cover}} style="background-image: url({{@blog.cover}});" {{/if}} class="adjust pw-main-header">
+    <div class="adjust o">
+        <div class="large-12 medium-12 small-12 columns adjust pw-side-info">
+            {{#if @blog.title}}
+                <div class="pw-blog-title with-logo">{{@blog.title}}</div>
+            {{/if}}
+            {{#if @blog.description}}
+                <div class="adjust pw-blog-description">{{@blog.description}}</div>
+            {{/if}}
+        </div>
+    </div>
+    <div class="adjust pw-subscribe">
+        <a href="{{@blog.url}}/rss/" class="sicon-rss"></a>
+    </div>
+    <div class="adjust pw-menu">
+        {{>menu}}
+    </div>
+</header>
