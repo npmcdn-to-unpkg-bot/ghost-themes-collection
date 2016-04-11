@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.outer-outer {
+  position: relative;
+  left: 0;
+  top: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: black -3px 4px 11px -3px; }
+  .outer-outer::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+.container-inner {
+  height: 70vh; }
+
+.breadcrumbs *, .sidebar *, .editor-view * {
+  font-size: 12px; }
+
+.breadcrumbs {
+  background-color: #333333;
+  color: dimgrey;
+  height: 50px;
+  border-radius: 5px 5px; }
+  .breadcrumbs li {
+    list-style: none;
+    float: left;
+    margin-right: 5px; }
+
+.sidebar {
+  height: 70vh;
+  border-radius: 0px 0px 0px 5px;
+  box-shadow: whitesmoke 1px -.5px 1px;
+  float: left;
+  display: block;
+  width: 17.05961%;
+  background-color: #333333;
+  color: dimgrey;
+  margin-right: 0px; }
+  .sidebar ul {
+    line-height: normal;
+    list-style: none; }
+  .sidebar li.right-arrow:before {
+    line-height: normal;
+    content: "";
+    border-color: transparent #008eef;
+    border-style: solid;
+    border-width: 0.35em 0 0.35em 0.45em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative; }
+  .sidebar li.bottom-arrow:before {
+    line-height: normal;
+    content: "";
+    border-color: #008eef transparent;
+    border-style: solid;
+    border-width: 0.35em 0.35em 0 0.35em;
+    display: block;
+    height: 0;
+    width: 0;
+    left: -1em;
+    top: 0.9em;
+    position: relative; }
+  .sidebar:last-child {
+    width: 14.70196%; }
+
+.editor-view {
+  height: 70vh;
+  border-right: white solid thin;
+  border-bottom: black solid thin;
+  float: left;
+  display: block;
+  width: 42.64902%;
+  margin: 0px;
+  overflow: scroll; }
+  .editor-view.right {
+    border-radius: 0px 0px 5px 0px;
+    background-color: white; }
+  .editor-view.left {
+    background-color: #1a1a1a; }
+  .editor-view:last-child {
+    width: 40.29137%; }
+
+body {
+  background: url("https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg");
+  background-size: cover; }
+
+.site-wrapper {
+  background: transparent; }

@@ -1,0 +1,15 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Paris Qian Sen -- Author -- github.com/qiansen1386
+
+# THANKS
+
+    Paris Qian Sen
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
