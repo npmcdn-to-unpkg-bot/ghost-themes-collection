@@ -1,0 +1,29 @@
+{
+  "name": "hugo-polygon-theme",
+  "version": "0.0.1",
+  "description": "a polygon theme",
+  "main": "\"\"",
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "gulp": "^3.9.1",
+    "semantic-ui": "^2.1.8"
+  },
+  "devDependencies": {
+    "postcss": "^5.0.19",
+    "webpack": "^1.12.14"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qiansen1386/hugo-polygon-theme"
+  },
+  "keywords": [
+    "hugo",
+    "theme",
+    "polygon"
+  ],
+  "author": "Paris Qian Sen",
+  "license": "MIT"
+}

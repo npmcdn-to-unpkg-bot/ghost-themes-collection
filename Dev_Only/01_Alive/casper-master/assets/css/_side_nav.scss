@@ -1,0 +1,131 @@
+@import "../scss/libraries/bourbon/bourbon.scss";
+@import "../scss/libraries/neat/neat.scss";
+
+$editor-bg: #1a1a1a;
+$navigation-bg: #333333;
+$top-nav-height: 40px;
+$nav-text: dimgrey;
+$text-size: 12px;
+//
+@mixin button-right() {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+
+    border-left: 5px solid green;
+}
+
+//@mixin border-radius($radius) {
+//    -webkit-border-radius: $radius;
+//    -moz-border-radius: $radius;
+//    -ms-border-radius: $radius;
+//    border-radius: $radius;
+//}
+
+body {
+    //background: $navigation-bg;
+}
+
+.outer-outer{
+    position:relative;
+    left: 0;
+    top: 0;
+    @include outer-container();
+    box-shadow:black -3px 4px 11px -3px;
+}
+
+//.container-outer {
+//    @include outer-container();
+//    height:70%;
+//    height:100vh;
+//}
+
+.container-inner {
+    //height:70%;
+    height:70vh;
+    //@include outer-container;
+}
+
+.breadcrumbs *, .sidebar *, .editor-view * {
+    font-size: $text-size;
+}
+
+.breadcrumbs {
+    li {
+        list-style: none;
+        float: left;
+        margin-right: 5px;
+    }
+    background-color: $navigation-bg;
+    color: $nav-text;
+    height: 50px;
+    border-radius:5px 5px;
+}
+
+.sidebar {
+    ul {
+        line-height: normal;
+        list-style: none;
+    }
+    li {
+        &.right-arrow:before {
+            line-height: normal;
+            content: "";
+            border-color: transparent #008eef;
+            border-style: solid;
+            border-width: 0.35em 0 0.35em 0.45em;
+            display: block;
+            height: 0;
+            width: 0;
+            left: -1em;
+            top: 0.9em;
+            position: relative;
+        }
+        &.bottom-arrow:before {
+            line-height: normal;
+            content: "";
+            border-color: #008eef transparent ;
+            border-style: solid;
+            border-width: 0.35em 0.35em 0 0.35em;
+            display: block;
+            height: 0;
+            width: 0;
+            left: -1em;
+            top: 0.9em;
+            position: relative;
+        }
+    }
+    height:70vh;
+    border-radius:0px 0px 0px 5px;
+    box-shadow: whitesmoke 1px -.5px 1px;
+    @include span-columns(2 of 12, block-collapse);
+    background-color: $navigation-bg;
+    color: $nav-text;
+    margin-right: 0px;
+}
+
+.editor-view {
+    height:70vh;
+    &.right {
+        border-radius:0px 0px 5px 0px;
+        background-color: white;
+    }
+    &.left {
+        background-color: $editor-bg;
+    }
+    border-right: white solid thin;
+    border-bottom: black solid thin;
+    @include span-columns(5 of 12, block-collapse);
+    margin: 0px;
+    overflow:scroll;
+}
+
+body {
+    background:url('https://static.pexels.com/photos/6548/cold-snow-winter-mountain.jpeg');
+    background-size:cover;
+}
+
+.site-wrapper{
+    background:transparent;
+}
