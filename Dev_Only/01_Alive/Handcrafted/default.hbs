@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {{! Document Settings }}
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  {{! Page Meta }}
+  <title>{{meta_title}}</title>
+  <meta name="description" content="{{meta_description}}" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+
+  <!-- Google Fonts -->
+  <link href="//fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/animatecss/3.4.0/animate.min.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" type="text/css" href="{{asset "css/icons.css"}}" />
+
+  <!-- Custom -->
+  <link rel="stylesheet" type="text/css" href="{{asset "css/style.css"}}" />
+
+  <!-- for Menu -->
+  <script src="{{asset "/js/modernizr.custom.js"}}"></script>
+
+  <!-- HTML5 Shim for IE -->
+  <!--[if IE]>
+  <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  {{! Ghost outputs important style and meta data with this tag }}
+  {{ghost_head}}
+</head>
+	<body class="{{body_class}}">
+  <!--[if lt IE 9]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div id="top"></div>
+      {{> "menu"}}
+      {{> "navigation"}}
+			{{! Everything else gets inserted here }}
+			{{{body}}}
+
+
+		{{! Ghost outputs important scripts and data with this tag }}
+		{{ghost_foot}}
+
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- bootstrap js-->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <!-- animations js-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
+    <!-- menu -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/classie/1.0.1/classie.min.js"></script>
+    <script src="{{asset "js/menu.js"}}"></script>
+
+    <!-- smoothScroll up -->
+    <script src="{{asset "js/smooth-scroll.min.js"}}"></script>
+    <script>
+      smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutCubic',
+        offset: 0,
+        updateURL: true,
+        callbackBefore: function ( toggle, anchor ) {},
+        callbackAfter: function ( toggle, anchor ) {}
+      });
+    </script>
+    <script type="text/javascript" src="{{asset 'js/posts_list.js'}}"></script>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-69482180-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+  <!-- Built with love using Web Starter Kit -->
+  </body>
+</html>
+

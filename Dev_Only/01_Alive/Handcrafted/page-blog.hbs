@@ -1,0 +1,35 @@
+{{!< default}}
+{{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
+
+{{! The tag below includes the blog header - partials/header.hbs }}
+{{> header}}
+
+<main class="main-content" role="main">
+
+  <header id="hero" class="text-center animated fadeIn">
+    <div class="container">
+      <div class="clearfix">
+        <a href="/">
+          <div class="profile-pic-container m-t-lg">
+            <div class="img-responsive img-circle profile-pic center-block">
+            </div>
+          </div>
+        </a>
+        <div id="blog-top" class="text-center">
+          <a href="/">
+            <div class="container">
+              <h1 class="h2"> Ralph Marston</h1>
+              <h5>Writer, Speaker and World Traveler</h5>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {{> posts_list}}
+
+</main><!-- .main-content -->
+
+{{! The tag below includes the theme footer - partials/footer.hbs }}
+{{> footer}}
