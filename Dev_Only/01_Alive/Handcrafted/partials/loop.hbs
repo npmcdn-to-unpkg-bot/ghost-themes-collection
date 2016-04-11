@@ -1,0 +1,35 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+	<article class="{{post_class}}" role="article">
+
+    {{#if image }}
+    <div class="article-img">
+      <a href="{{{url}}}" class="post-thumbnail"><img src="{{image}}" alt="{{title}}" /></a>
+      </div>
+    {{/if}}
+
+    <header class="article-header">
+      {{#if featured}}
+        <span class="featured-post">&darr; Featured</span>
+      {{/if}}
+
+      <h1 class="post-title"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>
+      <h6><time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time></h6>
+
+    </header>
+
+
+		<div class="post-content">
+			<p>{{excerpt}}&hellip;</p>
+			<p class="read-more"><a class="read-more-link" href="{{url}}" title="{{title}}">Continue reading &rarr;</a></p>
+		</div><!-- .post-content -->
+	</article>
+{{/foreach}}
+
+
+<article class='post-excerpt' role="article">
+
+  <span><time>" + post.date.substr(5, 11) + "</time>
+    <h2>" + post.title + "</h2><hr /><p>" + excerpt + "</p></span>
+  <a class='btn btn-sm btn-green' href='" + post.url + "'>Read more</a>
+</article>";
