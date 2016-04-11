@@ -1,0 +1,11 @@
+<nav class="pagination">
+	<div class="inner">
+    	{{#if prev}}
+        <a class="newer-posts arrow-left" href="{{page_url prev}}"><span class="screen-reader-text">Newer Posts</span></a>
+    	{{/if}}
+    	<span class="page-number">Page {{page}} of {{pages}}</span>
+    	{{#if next}}
+        <a class="older-posts arrow-right" href="{{page_url next}}"><span class="screen-reader-text">Older Posts</span></a>
+    	{{/if}}
+    </div><!-- .inner -->
+</nav>
