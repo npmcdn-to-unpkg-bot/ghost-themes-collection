@@ -6,6 +6,27 @@
 ### 0.0
 - tk
 
+### 0.0
+- tk
+
+### 0.0
+- tk
+
+### 0.0
+- tk
+
+### 0.0
+- tk
+
+### 0.0
+- tk
+
+### 0.8
+- ENV - Need to put social network in ENV!
+
+### 0.7
+- Casper: Adding social network icons
+
 ### 0.06
 - Need to test 29 themes
 - Major re-structured of the folders
