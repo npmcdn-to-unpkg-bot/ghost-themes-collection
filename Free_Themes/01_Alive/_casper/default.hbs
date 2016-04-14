@@ -18,15 +18,20 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
    
-    {{! font-awesome - by Pascal }}
+    <!-- CSS font-awesome - by Pascal -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
-    {{! Markdown code syntax highlightjs - by Pascal }}
+    <!-- CSS Code syntax highlightjs - by Pascal -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+    
+    <!-- CSS foundation zurb - by Pascal -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
     
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
+    
 </head>
+    
 <body class="{{body_class}} nav-closed">
 
     {{navigation}}
@@ -52,9 +57,12 @@
     {{! The main JavaScript file for Casper }}
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
     
-    {{! Markdown code syntax highlighting highlightjs - by Pascal }}
+    <!-- Markdown code syntax highlighting highlightjs - by Pascal -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
+     <!--  JavaScript foundation zurb - by Pascal  -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    
 </body>
 </html>
