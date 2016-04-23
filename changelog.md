@@ -20,7 +20,7 @@
 
 ### 0.81
 - mv themes outside the repo, it's getting too big
-- 2016-04-23_18h44
+- 2016-04-23_18h44 .
 
 ### 0.8
 - ENV - Need to put social network in ENV!
