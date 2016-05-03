@@ -1,6 +1,3 @@
-## from
-https://github.com/TryGhost/Casper
-
 # Casper
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/).
