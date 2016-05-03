@@ -1,7 +1,0 @@
-{
-  "name": "Casper",
-  "version": "1.2.8",
-  "dependencies": {
-    "animateplus": "^1.4.0"
-  }
-}
