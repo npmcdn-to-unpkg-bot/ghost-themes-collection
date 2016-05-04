@@ -16,7 +16,9 @@
 - tk
 
 ### 0.2 (wip)
-- WIP > Testing http://getuikit.com/docs/documentation_get-started.html
+- testing purecss.ioè
+
+- NoGo > Testing http://getuikit.com/docs/documentation_get-started.html
 
 - New theme based on the official Casper Theme 1.28
 - FirePress Casper / (is the stable version)
