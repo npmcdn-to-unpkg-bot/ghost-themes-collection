@@ -18,13 +18,16 @@
     <!-- Using minified version from origina screen.css  @_pascalandy -->
     <link rel="stylesheet" type="text/css" href="/assets/css/screen.min.css" />
     <!-- CSS unicorn-ui @_pascalandy -->
-    <link rel="stylesheet" type="text/css" href="/assets/css-firepress/buttons.min.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/custom-firepress/css-firepress/buttons.min.css" />
     <!-- Google Fonts Merriweather, Open+Sans -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
     <!-- CSS font-awesome @_pascalandy -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <!-- CSS Code syntax highlightjs @_pascalandy -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/styles/default.min.css">
+
+    <!-- Zurb CSS @_pascalandy -->
+    <link rel="stylesheet" type="text/css" href="/assets/custom-firepress/foundation-6.2.1/css/foundation.min.css" />
 
     {{! Ghost outputs important style and meta data with this tag }}
     {{ghost_head}}
@@ -60,6 +63,14 @@
     <!-- Markdown code syntax highlighting highlightjs @_pascalandy -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- Zurb CSS @_pascalandy -->
+    <script src="/assets/custom-firepress/foundation-6.2.1/js/vendor/jquery.min.js"></script>
+    <script src="/assets/custom-firepress/foundation-6.2.1/js//vendor/what-input.min.js"></script>
+    <script src="/assets/custom-firepress/foundation-6.2.1/js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
 
 </body>
 </html>
