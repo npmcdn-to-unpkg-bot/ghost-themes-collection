@@ -1,10 +1,9 @@
-
-/* ==========================================================================
-    Simple Grid
-    Project Page - http://thisisdallas.github.com/Simple-Grid/
-    Author - Dallas Bass
-    Site - http://dallasbass.com
-   ========================================================================== */
+/*
+  Simple Grid
+  Project Page - http://thisisdallas.github.com/Simple-Grid/
+  Author - Dallas Bass
+  Site - http://dallasbass.com
+*/
 
 *, *:after, *:before {
 	-webkit-box-sizing: border-box;
@@ -19,13 +18,13 @@ body {
 [class*='col-'] {
 	float: left;
   min-height: 1px;
-	padding-right: 0px; /* column-space */
+	padding-right: 20px; /* column-space */
 }
 
 .grid {
 	width: 100%;
 	max-width: 1140px;
-	min-width: 21px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -38,7 +37,7 @@ body {
 
 .grid-pad {
 	padding-top: 20px;
-	padding-left: 0px; /* grid-space to left */
+	padding-left: 20px; /* grid-space to left */
 	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
@@ -46,9 +45,7 @@ body {
 	float: right;
 }
 
-/* ==========================================================================
-    Content Columns
-   ========================================================================== */
+/* Content Columns */
 
 .col-1-1 {
 	width: 100%;
@@ -101,9 +98,7 @@ body {
 	width: 8.33%
 }
 
-/* ==========================================================================
-    Layout Columns
-   ========================================================================== */
+/* Layout Columns */
 
 .col-11-12 {
 	width: 91.66%
@@ -125,9 +120,7 @@ body {
 	width: 58.33%
 }
 
-/* ==========================================================================
-    Pushing blocks
-   ========================================================================== */
+/* Pushing blocks */
 
 .push-2-3, .push-8-12 {
 	margin-left: 66.66%;
@@ -183,27 +176,25 @@ body {
 		min-width: 0;
 		margin-left: 0;
 		margin-right: 0;
-		padding-left: 0px; /* grid-space to left */
-		padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
+		padding-left: 20px; /* grid-space to left */
+		padding-right: 10px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
 	}
 
 	[class*='col-'] {
 		width: auto;
 		float: none;
 		margin: 10px 0;
-		padding-left: 10;
+		padding-left: 0;
 		padding-right: 10px; /* column-space */
 	}
 
-/* ==========================================================================
-    Mobile Layout
-   ========================================================================== */
+	/* Mobile Layout */
 
 	[class*='mobile-col-'] {
 		float: left;
 		margin: 0 0 10px;
 		padding-left: 0;
-		padding-right: 0px; /* column-space */
+		padding-right: 10px; /* column-space */
 		padding-bottom: 0;
 	}
 
@@ -258,9 +249,7 @@ body {
 		width: 8.33%
 	}
 
-/* ==========================================================================
-   Layout Columns
-   ========================================================================== */
+	/* Layout Columns */
 
 	.mobile-col-11-12 {
 		width: 91.66%
