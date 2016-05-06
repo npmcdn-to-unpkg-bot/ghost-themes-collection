@@ -189,7 +189,7 @@ body {
 		float: none;
 		margin: 10px 0;
 		padding-left: 0;
-		padding-right: 10px; /* column-space */
+		padding-right: 0px; /* column-space */
 	}
 
 	/* Mobile Layout */
@@ -198,7 +198,7 @@ body {
 		float: left;
 		margin: 0 0 10px;
 		padding-left: 0;
-		padding-right: 10px; /* column-space */
+		padding-right: 8px; /* column-space */
 		padding-bottom: 0;
 	}
 
