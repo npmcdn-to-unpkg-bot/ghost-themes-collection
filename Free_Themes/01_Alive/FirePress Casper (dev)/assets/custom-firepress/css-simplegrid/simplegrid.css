@@ -18,7 +18,7 @@ body {
 [class*='col-'] {
 	float: left;
     min-height: 1px;
-	padding-right: 10px; /* column-space */
+	padding-right: px; /* column-space */
 }
 
 .grid {
@@ -179,7 +179,7 @@ body {
 		margin-left: 0;
 		margin-right: 0;
         padding-top: 0px;
-        padding-bottom: 10px;
+        padding-bottom: 31px;
 		padding-left: 0px; /* grid-space to left */
 		padding-right: 0px; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-10px=10px */
 	}
@@ -187,7 +187,7 @@ body {
 	[class*='col-'] {
 		width: auto;
 		float: none;
-		margin: 10px 0;
+		margin: 0 auto;
 		padding-left: 0;
 		padding-right: 0px; /* column-space */
 	}
