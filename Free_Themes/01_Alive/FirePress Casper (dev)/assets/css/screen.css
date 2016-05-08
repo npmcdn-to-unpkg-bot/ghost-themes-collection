@@ -2019,6 +2019,7 @@ body:not(.post-template) .post-title {
 
     .author-profile .author-image {
         margin-top: -70px;
+        margin-bottom: 12px;
     }
 
     .author-profile .author-meta span {
