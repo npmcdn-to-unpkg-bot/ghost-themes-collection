@@ -1828,7 +1828,7 @@ body:not(.post-template) .post-title {
     
     body.nav-opened .menu-button {
         background: none;
-        border-color: #BFC8CD;
+        border: transparent;
     }
 
     .main-nav.overlay a:hover {
@@ -1849,7 +1849,6 @@ body:not(.post-template) .post-title {
 
     .nav-title {
         top: 25px;
-
     }
 
     .nav-close {
