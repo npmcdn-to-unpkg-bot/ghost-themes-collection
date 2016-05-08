@@ -17,9 +17,11 @@
     <!-- Styles'n'Scripts -->
     <!-- Google Fonts Merriweather, Open+Sans -->
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-    <!-- Using minified version from origina screen.css  @_pascalandy -->
-    <link rel="stylesheet" type="text/css" href="/assets/css/screen.min.css" />
 
+    <!-- Minified version from original provided in Casper's Theme 'screen.css'  @_pascalandy -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/screen.min.css" />
+    <!-- Normalize CSS (4.1.1) @_pascalandy -->
+    <link rel="stylesheet" type="text/css" href="/assets/custom-firepress/css-normalize/normalize.css">
     <!-- CSS simplegrid @_pascalandy -->
     <link rel="stylesheet" type="text/css" href="/assets/custom-firepress/css-simplegrid/simplegrid.css" />
     <!-- CSS unicorn-ui @_pascalandy -->
@@ -39,22 +41,21 @@
 <body class="{{body_class}} nav-closed">
 
     {{navigation}}
-    
+
 
     <div class="site-wrapper">
 
         {{! Everything else gets inserted here }}
         {{{body}}}
-        
+
     <!--
         <footer class="site-footer clearfix">
             <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
             <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
         </footer>
     -->
-        
-    </div>
 
+    </div>
 
     {{!-- jQuery needs to come before /ghost_foot/ so that jQuery can be used in code injection --}}
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -69,6 +70,22 @@
     <!-- Markdown code syntax highlighting highlightjs @_pascalandy -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.3.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- disqus code begins -->
+    <!--
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'tk-username'; // required: replace example with your forum shortname
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    -->
+    <!-- disqus code ends -->
 
 </body>
 </html>
