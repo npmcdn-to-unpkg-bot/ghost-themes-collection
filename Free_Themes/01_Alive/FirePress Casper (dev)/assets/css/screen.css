@@ -2031,7 +2031,7 @@ body:not(.post-template) .post-title {
 
     .read-next {
         margin-top: 2rem;
-        margin-bottom: -37px;
+        margin-bottom: 0px;
     }
 
     .read-next .post {
