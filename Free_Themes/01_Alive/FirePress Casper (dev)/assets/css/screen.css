@@ -1828,24 +1828,23 @@ body:not(.post-template) .post-title {
     
     body.nav-opened .menu-button {
         background: none;
-        border: transparent;
+        border-color: #BFC8CD;
     }
 
     .main-nav.overlay a:hover {
         color: #fff;
-        border-color: transparent;
-        background: transparent;
+        border-color: #555;
     }
 
     .no-cover .main-nav.overlay {
         background: none;
     }
     .no-cover .main-nav.overlay .menu-button {
-        border: none;
+        border-color: #BFC8CD;
     }
 
     .main-nav.overlay .menu-button {
-        border-color: transparent;
+        border-color: #BFC8CD;
     }
 
     .nav-title {
