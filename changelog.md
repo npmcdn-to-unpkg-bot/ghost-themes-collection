@@ -15,8 +15,8 @@
 ### 0.0
 - tk
 
-### 0.0
-- tk
+### 0.82
+- been working on master ... bad practice
 
 ### 0.81
 - mv themes outside the repo, it's getting too big
