@@ -3,14 +3,14 @@
 ### ToDo (Private)
 
 - https://gitlab.com/firepress-delivery-heroes/task-dispatcher/issues?label_name%5B%5D=Theme+FirePress+Casper
-- 
+
 — — — — — — — — — — — — — — — —
 
 ### 0.0
 - tk
 
-### 0.0
-- tk
+### 1.31B (2016-07-28_00h37)
+- FIX - Many things were not parts/updates were NOT part of https://github.com/TryGhost/Casper/compare/09b48303987fdc8f5185cca3c81e215da638d8cf...master
 
 ### 1.31 (2016-07-27_23h24)
 - following to updates from the main Casper repo
