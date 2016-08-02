@@ -892,11 +892,11 @@ body.nav-opened .nav {
 
 /* When the navigation is closed */
 .nav-closed .menu-button {
-    color: #2e2e2e;
-    border-color: #2e2e2e;
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.6);
 }
 .nav-closed .menu-button:hover {
-    color: #fff;
+    color: #222;
 }
 
 /* When the navigation is closed and there is no cover image */
@@ -1957,30 +1957,30 @@ body:not(.post-template) .post-title {
         outline: 0;
     }
     
-
+/* BYPASSING this element ==============================================
     .menu-button {
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;
         color: #2e2e2e;
-        background: fff;
+        background: transparent;
     }
     
     .menu-button:hover {
         color: #2e2e2e;
-        border-color: #2e2e2e;
-        background: fff;
+        border-color: transparent;
+        background: none;
     }
-
+===BYPASSING END====================================================== */
     
     body.nav-opened .menu-button {
-        background: fff;
-        border: #2e2e2e;
+        background: none;
+        border: transparent;
     }
 
     .main-nav.overlay a:hover {
-        color: #2e2e2e;
-        border-color: #2e2e2e;
+        color: #fff;
+        border-color: #555;
     }
 
     .no-cover .main-nav.overlay {
@@ -1991,7 +1991,7 @@ body:not(.post-template) .post-title {
     }
 
     .main-nav.overlay .menu-button {
-        border-color: #2e2e2e;
+        border-color: #BFC8CD;
     }
 
     .nav-title {
