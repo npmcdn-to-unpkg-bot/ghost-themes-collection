@@ -893,10 +893,10 @@ body.nav-opened .nav {
 /* When the navigation is closed */
 .nav-closed .menu-button {
     color: #2e2e2e;
-    border-color: #fff;
+    border-color: #2e2e2e;
 }
 .nav-closed .menu-button:hover {
-    color: #2e2e2e;
+    color: #fff;
 }
 
 /* When the navigation is closed and there is no cover image */
@@ -1957,21 +1957,21 @@ body:not(.post-template) .post-title {
         outline: 0;
     }
     
-/* BYPASSING this element ==============================================
+
     .menu-button {
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;
         color: #2e2e2e;
-        background: transparent;
+        background: fff;
     }
     
     .menu-button:hover {
         color: #2e2e2e;
-        border-color: transparent;
-        background: none;
+        border-color: #2e2e2e;
+        background: fff;
     }
-===BYPASSING END====================================================== */
+
     
     body.nav-opened .menu-button {
         background: fff;
