@@ -6,9 +6,10 @@
 
 — — — — — — — — — — — — — — — —
 
-### I
+### 1.32 wip
 
-- Testing: the Menu with a black text and a white background
+- TEST: FAIL: the Menu with a black text and a white background
+- TEST: http://sharingbuttons.io/
 
 ### 1.31B (2016-07-28_00h37)
 - FIX - Many things were not parts/updates were NOT part of https://github.com/TryGhost/Casper/compare/09b48303987fdc8f5185cca3c81e215da638d8cf...master
