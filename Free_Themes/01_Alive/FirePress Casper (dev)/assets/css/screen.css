@@ -2269,7 +2269,7 @@ body:not(.post-template) .post-title {
 
 /* ==========================================================================
    101. sharingbuttons.io/
-   ========================================================================== */
+   ==========================================================================
 
 .resp-sharing-button {
   display: inline-block;
@@ -2298,13 +2298,13 @@ body:not(.post-template) .post-title {
   margin-bottom: -0.1em;
 }
 
-/* Non solid icons get a stroke */
+/* Non solid icons get a stroke 
 .resp-sharing-button__icon {
   stroke: #FFF;
   fill: none;
 }
 
-/* Solid icons get a fill */
+/* Solid icons get a fill 
 .resp-sharing-button__icon--solid,
 .resp-sharing-button__icon--solidcircle {
   fill: #FFF;
@@ -2367,6 +2367,8 @@ body:not(.post-template) .post-title {
   background-color: #075683;
   border-color: #075683;
 }
+
+============================== */
 
 /* ==========================================================================
    101 - END
