@@ -865,7 +865,6 @@ body.nav-opened .nav {
     float: right;
     height: 40px;
     padding: 0 15px;
-    margin-top: 5px;
     border-style: solid;
     border-width: 1px;
     opacity: 1;
@@ -1773,7 +1772,7 @@ body:not(.post-template) .post-title {
 
     .blog-logo img {
         padding: 0px 0;
-        margin-top: 4px;
+        margin-top: 0px;
     }
 
     .page-title {
