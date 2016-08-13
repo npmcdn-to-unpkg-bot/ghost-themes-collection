@@ -1131,7 +1131,6 @@ body:not(.post-template) .post-title {
 
 .post-template .post-header {
    margin-bottom: 3.4rem;
-   min-height: 390px;
 }
 
 .post-template .post-title {
@@ -1850,7 +1849,6 @@ body:not(.post-template) .post-title {
 
     .post-head.main-header {
         height:40vh;
-        min-height: 280px;
     }
 
     .tag-head.main-header,
@@ -2163,7 +2161,6 @@ body:not(.post-template) .post-title {
 
     .post-head.main-header {
         height: 34vh;
-        min-height: 180px;
     }
 
     .tag-head.main-header,
