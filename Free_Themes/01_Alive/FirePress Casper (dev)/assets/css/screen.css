@@ -857,6 +857,8 @@ body.nav-opened .nav {
     width: auto;
 }
 
+/* Hack to not show the word 'Menu' by putting font-size at 0px. See comment in index.hbs
+   — — — — — — — — — — — — — — — — */
 .menu-button {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -864,18 +866,21 @@ body.nav-opened .nav {
     display: inline-block;
     float: right;
     height: 40px;
-    padding: 0 12px;
+    padding: 4px 12px;
     border-style: solid;
-    border-width: 1px;
+    border-width: 0px;
     opacity: 0.8;
     text-align: center;
-    font-size: 12px;
+    font-size: 0px;
     text-transform: uppercase;
     line-height: 40px;
     white-space: nowrap;
     border-radius: 3px;
     transition: all 0.5s ease;
 }
+
+/* Here the font size control the line of the burger menu
+   — — — — — — — — — — — — — — — — */
 .menu-button:before {
     background: #fff;
     font-size: 18px;
@@ -1930,6 +1935,8 @@ body:not(.post-template) .post-title {
         height: 40px;
     }
 
+/* Hack — See comment at line 860
+   — — — — — — — — — — — — — — — — */
     .menu-button {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -1937,13 +1944,13 @@ body:not(.post-template) .post-title {
         display: inline-block;
         float: right;
         height: 40px;
-        padding: 0 15px;
+        padding: 4px 12px;
         margin-top: 5px;
         border-style: solid;
         border-width: 1px;
-        opacity: 1;
+        opacity: 0.8;
         text-align: center;
-        font-size: 12px;
+        font-size: 0px;
         text-transform: uppercase;
         line-height: 40px;
         white-space: nowrap;
@@ -1953,9 +1960,9 @@ body:not(.post-template) .post-title {
     }
     .menu-button:before {
     background: #fff;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
-    margin-right: 6px;
+    margin-right: 0px;
     position: relative;
     top: 1px;
     }
