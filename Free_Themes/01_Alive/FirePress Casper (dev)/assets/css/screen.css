@@ -581,7 +581,7 @@ body.nav-opened .site-wrapper {
     height: 40vh;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
+    background: #222 no-repeat center top;
     background-size: cover;
     overflow: hidden;
 }
@@ -1895,6 +1895,7 @@ body:not(.post-template) .post-title {
     .main-header {
         margin-bottom: 15px;
         height: 40vh;
+        background: #222 no-repeat center center;
     }
 
     .no-cover.main-header {
