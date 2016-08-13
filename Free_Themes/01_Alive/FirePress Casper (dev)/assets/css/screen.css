@@ -2160,6 +2160,7 @@ body:not(.post-template) .post-title {
     }
 
     .post-head.main-header {
+        margin-bottom: 15px;
         height: 34vh;
     }
 
