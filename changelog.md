@@ -3,14 +3,9 @@
 ### 0.0
 - tk
 
-### 0.0
-- tk
-
-### 0.0
-- tk
-
 ### 1.32 (wip)
-- Menu wip 
+- Menu have fixed white background with a black text. This help to avoid visual glich with white banner backgrounds
+- Menu and logo are both at 40px height
 - fixing banner size
 - loop.hbs preview is clickable / 40 words preview
 
