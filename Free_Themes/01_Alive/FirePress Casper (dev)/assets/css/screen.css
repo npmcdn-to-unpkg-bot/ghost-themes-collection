@@ -877,6 +877,7 @@ body.nav-opened .nav {
     transition: all 0.5s ease;
 }
 .menu-button:before {
+    background: #fff;
     font-size: 12px;
     font-weight: bold;
     margin-right: 6px;
@@ -884,7 +885,9 @@ body.nav-opened .nav {
     top: 1px;
 }
 .menu-button:hover {
+    color: #222;
     background: #fff;
+    border-width: 0px;
 }
 .menu-button:focus {
     outline: 0;
@@ -892,11 +895,14 @@ body.nav-opened .nav {
 
 /* When the navigation is closed */
 .nav-closed .menu-button {
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.6);
+    color: #222;
+    background: #fff;
+    border-width: 0px;
 }
 .nav-closed .menu-button:hover {
     color: #222;
+    background: #fff;
+    border-width: 0px;
 }
 
 /* When the navigation is closed and there is no cover image */
@@ -1957,7 +1963,6 @@ body:not(.post-template) .post-title {
         outline: 0;
     }
     
-/* BYPASSING this element ==============================================
     .menu-button {
         padding: 0 5px;
         border-radius: 0;
@@ -1971,7 +1976,6 @@ body:not(.post-template) .post-title {
         border-color: transparent;
         background: none;
     }
-===BYPASSING END====================================================== */
     
     body.nav-opened .menu-button {
         background: none;
