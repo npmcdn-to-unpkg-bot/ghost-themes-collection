@@ -4,6 +4,8 @@
 - tk
 
 ### 1.32 (wip)
+- The burger menu does not have the word Menu anymore. This gives us more space on the smartphone (view 4)
+- Add transparency to the burger menu (0.8)
 - Menu have fixed white background with a black text. This help to avoid visual glich with white banner backgrounds
 - Menu and logo are both at 40px height
 - fixing banner size

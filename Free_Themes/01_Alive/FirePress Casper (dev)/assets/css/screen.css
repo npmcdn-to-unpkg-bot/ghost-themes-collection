@@ -864,10 +864,10 @@ body.nav-opened .nav {
     display: inline-block;
     float: right;
     height: 40px;
-    padding: 0 15px;
+    padding: 0 12px;
     border-style: solid;
     border-width: 1px;
-    opacity: 1;
+    opacity: 0.8;
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
@@ -878,11 +878,11 @@ body.nav-opened .nav {
 }
 .menu-button:before {
     background: #fff;
-    font-size: 12px;
+    font-size: 18px;
     font-weight: bold;
-    margin-right: 6px;
+    margin-right: 0px;
     position: relative;
-    top: 1px;
+    top: 3px;
 }
 .menu-button:hover {
     color: #222;
