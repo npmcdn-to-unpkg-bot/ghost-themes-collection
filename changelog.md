@@ -9,11 +9,13 @@
 ### 0.0
 - tk
 
-### 0.0
-- tk
+### 1.32 (wip)
+- Menu wip 
+- fixing banner size
+- loop.hbs preview is clickable / 40 words preview
 
-### 0.0
-- tk
+### 1.31
+- Following fixes brought by the official Casper Theme
 
 ### 0.82
 - been working on master ... bad practice
