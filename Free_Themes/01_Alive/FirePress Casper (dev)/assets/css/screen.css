@@ -871,7 +871,7 @@ body.nav-opened .nav {
     text-align: center;
     font-size: 12px;
     text-transform: uppercase;
-    line-height: 35px;
+    line-height: 38px;
     white-space: nowrap;
     border-radius: 3px;
     transition: all 0.5s ease;
@@ -1943,50 +1943,41 @@ body:not(.post-template) .post-title {
         text-align: center;
         font-size: 12px;
         text-transform: uppercase;
-        line-height: 35px;
+        line-height: 38px;
         white-space: nowrap;
         border-radius: 3px;
         transition: all 0.5s ease;
         
     }
     .menu-button:before {
-        font-size: 12px;
-        font-weight: bold;
-        margin-right: 6px;
-        position: relative;
-        top: 1px;
+    background: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 6px;
+    position: relative;
+    top: 1px;
     }
     .menu-button:hover {
+        color: #222;
         background: #fff;
+        border-width: 0px;
     }
     .menu-button:focus {
         outline: 0;
     }
-    
-    .menu-button {
-        padding: 0 5px;
-        border-radius: 0;
-        border-width: 0;
-        color: #2e2e2e;
-        background: transparent;
-    }
-    
-    .menu-button:hover {
-        color: #2e2e2e;
-        border-color: transparent;
-        background: none;
-    }
-    
-    body.nav-opened .menu-button {
-        background: none;
-        border: transparent;
-    }
 
-    .main-nav.overlay a:hover {
-        color: #fff;
-        border-color: #555;
+    /* When the navigation is closed */
+    .nav-closed .menu-button {
+        color: #222;
+        background: #fff;
+        border-width: 0px;
     }
-
+    .nav-closed .menu-button:hover {
+        color: #222;
+        background: #fff;
+        border-width: 0px;
+    }
+   
     .no-cover .main-nav.overlay {
         background: none;
     }
