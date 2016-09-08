@@ -2,7 +2,7 @@
 https://github.com/firepress-org/ghost-themes-collection.git
 
 ## Status
-WIP (work in progress). Not ready for prime time yet.
+WIP (work in progress). TK - Means it’s not ready for prime time yet / Pascal Andy 2016-09-07_21h20.
 
 ## See changelog
 https://github.com/firepress-org/splashy/blob/master/changelog.md

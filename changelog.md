@@ -5,7 +5,12 @@
 
 — — — — — — — — — — — — — — — —
 
-### 1.32 (wip)
+### 1.33 (wip)
+
+
+### 1.32 (2016-09-07_21h22)
+
+- This version is NOT clean as I am doing core re-structure of the this repo. 
 
 - The burger menu does not have the word Menu anymore. This gives us more space on the smartphone (view 4)
 - Add transparency to the burger menu (0.8)
